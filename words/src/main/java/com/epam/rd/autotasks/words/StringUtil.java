@@ -21,7 +21,6 @@ public class StringUtil {
                 countWords++;
             }
         }
-
         return countWords;
     }
 
