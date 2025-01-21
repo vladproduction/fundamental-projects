@@ -1,0 +1,11 @@
+{
+  "id" : 100,
+  "name" : "David",
+  "height" : 175.5,
+  "client" : true,
+  "address" : {
+    "street" : "Baker str",
+    "city" : "London",
+    "zipcode" : 221
+  }
+}
