@@ -1,0 +1,20 @@
+package com.epam.rd.autotasks;
+
+public class DecrementingCarouselWithLimitedRun extends DecrementingCarousel{
+
+    private final int actionLimit;
+
+    public DecrementingCarouselWithLimitedRun(final int capacity, final int actionLimit) {
+        super(capacity);
+        this.actionLimit = actionLimit;
+    }
+
+    @Override
+    public CarouselRun run() {
+        if(isRunningState()){
+            return null;
+        }
+        setIsRunningState(true);
+        return new CarouselRun(getElementsContainer(), 3, actionLimit);
+    }
+}
